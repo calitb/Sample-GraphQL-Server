@@ -12,7 +12,7 @@ const resolvers = {
     }
   },
   Mutation: {
-    addNickname: (parent, args) => {
+    setNickname: (parent, args) => {
       const id = parseInt(args.id, 10)
       const pokemon = pokemons[id - 1]
       pokemon.nickname = args.nickname

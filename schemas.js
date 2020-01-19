@@ -16,7 +16,7 @@ const typeDefs = gql`
   }
   
   type Mutation {
-    addNickname(id: ID!, nickname: String): Pokemon
+    setNickname(id: ID!, nickname: String): Pokemon
   }
 `;
 
